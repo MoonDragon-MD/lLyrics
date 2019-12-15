@@ -1,10 +1,8 @@
 lLyrics
 ===============
 
-lLyrics is a plugin for [Rhythmbox](http://projects.gnome.org/rhythmbox/), which displays lyrics for the current playing song in the sidebar.
-
-It is intended as a replacement of the built-in lyrics plugin of Rhythmbox with more features, better UI integration and more lyrics engines.
-
+lLyrics è un plugin per [Rhythmbox](http://projects.gnome.org/rhythmbox/), che visualizza il testo della canzone in riproduzione corrente nella barra laterale.
+È inteso come una sostituzione del plugin integrato per i testi di Rhythmbox con più funzioni, una migliore integrazione dell'interfaccia utente e più motori per i testi.
 
 
 ![Screenshot](img/screenshot-small.png)
@@ -12,7 +10,7 @@ It is intended as a replacement of the built-in lyrics plugin of Rhythmbox with 
 
 
 
-Lyrics sources
+Sorgenti Lyrics 
 ---------------
 
   - Lyricwiki.org
@@ -26,83 +24,80 @@ Lyrics sources
   - Darklyrics.com
   - Chartlyrics.com
 
-It is also possible to retrieve lyrics from the built-in Rhythmbox lyrics plugin, but this is not recommended since it has some bugs and may cause instabilities.
+E' anche possibile recuperare i testi dal plugin integrato di Rhythmbox, ma questo non è raccomandato, in quanto presenta alcuni bug e può causare instabilità.
 
 
 
-
-Requirements
+Requisiti
 ---------------
 
-The 'master' branch supports Rhythmbox 3.0 and above. **It is incompatible with older Rhythmbox 2.xx versions!**
+Il ramo "master" supporta Rhythmbox 3.0 e superiori. **È incompatibile con le versioni precedenti di Rhythmbox 2.xx!**
 
-To get the plugin for Rhythmbox 2.xx, change to branch 'RB2'! It provides the last version compatible with Rhythmbox 2.xx, but please note, that it will not be updated or developed any further.
+Per ottenere il plugin per Rhythmbox 2.xx, passare al ramo 'RB2'! Fornisce l'ultima versione compatibile con Rhythmbox 2.xx, ma si prega di notare che non sarà aggiornato o sviluppato ulteriormente.
+Per installare lLyrics from source è necessario il pacchetto  `gettext`.
 
-To install lLyrics from source you will need the package `gettext`.
+#### Dipendenze ####
 
-#### Dependencies ####
-
-lLyrics can be run without the need of any additional packages, but it is recommended to install the python module **"chardet"** for better handling of different encodings.
-
+lLyrics può essere eseguito senza la necessità di pacchetti aggiuntivi, ma si raccomanda di installare il modulo python **"chardet"** per una migliore gestione delle diverse codifiche.
 
 
-Installation
+
+Installazione
 ---------------
 
-#### Ubuntu & derivates: PPA ####
+#### Ubuntu & derivate: PPA ####
 
-In Ubuntu based distribution, you can install this plugin via [this PPA by fossfreedom](https://launchpad.net/~fossfreedom/+archive/rhythmbox-plugins).
+Nelle distribuzioni basate su Ubuntu, è possibile installare questo plugin tramite [Questo PPA by fossfreedom](https://launchpad.net/~fossfreedom/+archive/rhythmbox-plugins).
 
 #### Archlinux: AUR ####
 
-Archlinux user can install the plugin via [this AUR package](https://aur.archlinux.org/packages/rhythmbox-llyrics/).
+L'utente di Archlinux può installare il plugin tramite [Questo AUR package](https://aur.archlinux.org/packages/rhythmbox-llyrics/).
 
-#### Manual installation ####
+#### Installatione manuale ####
 
-	1.) Press the "Download ZIP" button and extract the .zip file.
+	1.) Clicca sul pulsante  "Download ZIP" e estrai il file *.zip.
 
-	2.) Change to the extracted folder and open a terminal.
+	2.) Passare alla cartella estratta e aprire un terminale.
 
-	3.) Run `make install`.
+	3.) Esegui `make install`.
 
-	4.) Enable the plugin in Rhythmbox.
+	4.) Abilita plugin all'interno di Rhythmbox.
 
-It will ask for your sudo password, but don't worry, it is only required to install the schema file that is needed to save your preferences.
+Ti chiederà la tua password di sudo, ma non preoccuparti, è sufficiente installare il file di schema necessario per salvare le tue preferenze.
+Se si desidera installare il plugin a livello di sistema per tutti gli utenti, eseguire `make install-systemwide` al punto 3.
 
-If you want to install the plugin systemwide for all users, run `make install-systemwide` in step 3.
+Per disinstallare, eseguire `make uninstall`.
 
-To uninstall, run `make uninstall`.
-
-Note that you need Rhythmbox version 2.90 or higher to run lLyrics!
-
+Si noti che è necessario Rhythmbox versione 2.90 o superiore per eseguire lLyrics!
 
 
 
-Features
+
+Caratteristiche
 ---------------
-  - Support for a lot of different lyrics sites (see above)
-  - Integration into the Rhythmbox UI
-  - Lyrics sources can be prioritised and deactivated
-  - Automatically display lyrics on playback or only on-demand
-  - Save retrieved lyrics to a file (can be deactivated)
-  - Possibility to edit lyrics
-  - Correct artist/title tag via Last.fm API for better results
-  - Appearance customizable to adapt to your desires or your available screen space
-  - Basic support for synchronized lyrics
-  - more...
+  - Supporto per molti siti di testi diversi (vedi sopra)
+  - Integrazione nell'interfaccia utente di Rhythmbox
+  - Le fonti dei testi possono essere prioritarie e disattivate.
+  - Visualizzazione automatica dei testi in riproduzione o solo su richiesta
+  - Salvare i testi recuperati in un file (può essere disattivato)
+  - Possibilità di modificare i testi
+  - Correggere il tag artista/titolo tramite Last.fm API per risultati migliori
+  - Aspetto personalizzabile per adattarsi ai vostri desideri o allo spazio disponibile sullo schermo
+  - Supporto di base per testi sincronizzati
+  - altro.....
 
 
 
 
-Credits
+Crediti
 ---------------
 
-I was inspired by the awesome Songbird plugin [MLyrics](https://github.com/FreeleX/MLyrics).
-Thanks to all who contribute, report issues or help in any other way to make this plugin better.
+Sono stato ispirato dal fantastico plugin di Songbird [MLyrics](https://github.com/FreeleX/MLyrics).
+Grazie a tutti coloro che contribuiscono, segnalano problemi o aiutano in qualsiasi altro modo a migliorare questo plugin.
 
-You will always find the latest version on [GitHub](https://github.com/dmo60/lLyrics).
-Please report bugs, issues or feature requests there.
+Troverete sempre l'ultima versione su [GitHub](https://github.com/dmo60/lLyrics).
+Si prega di segnalare bug, problemi o richieste di funzionalità.
 
-Help with translations is always appreciated!
+L'aiuto con le traduzioni è sempre apprezzato!
 
-All lyrics are property and copyright of their owners.
+Tutti i testi sono proprietà e copyright dei loro proprietari.
