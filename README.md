@@ -3,6 +3,7 @@ lLyrics
 
 lLyrics è un plugin per [Rhythmbox](http://projects.gnome.org/rhythmbox/), che visualizza il testo della canzone in riproduzione corrente nella barra laterale.
 È inteso come una sostituzione del plugin integrato per i testi di Rhythmbox con più funzioni, una migliore integrazione dell'interfaccia utente e più motori per i testi.
+Questa è la traduzione italiana
 
 
 ![Screenshot](img/screenshot-small.png)
